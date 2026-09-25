@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧩</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<title>Eegai Extensions – Chrome and Edge extensions by Eegai Technologies</title>
+<meta name="description" content="Chrome and Edge extensions from Eegai Technologies, Tamil Nadu. Free download and step-by-step install guide.">
+</head>
+<body data-page="home">
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true" data-mark>ஈ</span><span data-brand>Eegai Extensions</span></a>
+  <nav class="links" aria-label="Main">
+    <a href="index.html#products">Extensions</a><a href="index.html#install">Install guide</a><a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+<main>
+<section class="hero" id="hero"></section>
+
+<section class="block" id="products">
+  <div class="wrap">
+    <h2 class="section-title">Pick the tool you need</h2>
+    <p class="sub">Each extension does one job well. Open one to read what it does, who it is for, and to download it.</p>
+    <div class="toolbar" id="toolbar"></div>
+    <div class="grid" id="grid"><div class="empty">Loading extensions… If this stays, check data/extensions.js for a missing comma or quote.</div></div>
+  </div>
+</section>
+
+<section class="block white" id="install">
+  <div class="wrap">
+    <h2 class="section-title">How to install an extension from the zip</h2>
+    <p class="sub">Until an extension is on the Chrome Web Store or Edge Add-ons, you install it yourself using "Load unpacked". It takes about two minutes and you only do it once per extension.</p>
+    <div class="tabs" role="tablist" aria-label="Choose your browser">
+      <button role="tab" id="t-chrome" aria-selected="true" aria-controls="p-chrome">Google Chrome</button>
+      <button role="tab" id="t-edge" aria-selected="false" aria-controls="p-edge" tabindex="-1">Microsoft Edge</button>
+    </div>
+    <div role="tabpanel" id="p-chrome" aria-labelledby="t-chrome">
+      <ol class="steps">
+        <li><b>Download the zip</b>Open the extension and click <b>Download zip</b>. It saves to your Downloads folder.</li>
+        <li><b>Extract the zip</b>Right-click the zip file and choose <b>Extract All</b> (Windows) or double-click it (Mac). Move the extracted folder somewhere safe, like <code>Documents\Eegai</code>. Do not delete this folder later, or the extension stops working.</li>
+        <li><b>Open the extensions page</b>Type <code>chrome://extensions</code> in the address bar and press <kbd>Enter</kbd>.</li>
+        <li><b>Turn on Developer mode</b>Switch on <b>Developer mode</b> at the top-right of the page.</li>
+        <li><b>Load the folder</b>Click <b>Load unpacked</b> and select the extracted folder, the one that contains <code>manifest.json</code>. The extension appears in the list.</li>
+        <li><b>Pin it</b>Click the puzzle-piece icon next to the address bar and click the pin next to the Eegai extension, so its icon is always visible.</li>
+      </ol>
+    </div>
+    <div role="tabpanel" id="p-edge" aria-labelledby="t-edge" hidden>
+      <ol class="steps">
+        <li><b>Download the zip</b>Open the extension and click <b>Download zip</b>. It saves to your Downloads folder.</li>
+        <li><b>Extract the zip</b>Right-click the zip file and choose <b>Extract All</b>. Move the extracted folder somewhere safe, like <code>Documents\Eegai</code>. Do not delete this folder later, or the extension stops working.</li>
+        <li><b>Open the extensions page</b>Type <code>edge://extensions</code> in the address bar and press <kbd>Enter</kbd>.</li>
+        <li><b>Turn on Developer mode</b>Switch on <b>Developer mode</b> in the left panel (on small windows it is at the bottom-left).</li>
+        <li><b>Load the folder</b>Click <b>Load unpacked</b> and select the extracted folder, the one that contains <code>manifest.json</code>. The extension appears in the list.</li>
+        <li><b>Pin it</b>Click the puzzle-piece icon next to the address bar and click the eye icon next to the Eegai extension to show it in the toolbar.</li>
+      </ol>
+    </div>
+    <div class="after">
+      <h3>Updating to a new version</h3>
+      <p>Download the new zip, extract it and replace the files in your existing folder. Then open the extensions page and click the reload (↻) icon on the extension card. Your trial and licence stay the same.</p>
+      <h3>If you see "Manifest file is missing"</h3>
+      <p>You selected the wrong folder. Open the extracted folder until you see <code>manifest.json</code> directly inside it, and select that folder.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="pricing">
+  <div class="wrap">
+    <h2 class="section-title">Simple pricing</h2>
+    <p class="sub">No monthly fees. Try it free, and if it helps you, pay once by UPI from inside the extension.</p>
+    <div class="table-wrap"><table class="price">
+      <thead><tr><th scope="col">Extension</th><th scope="col">Free trial</th><th scope="col">Price</th></tr></thead>
+      <tbody id="pricing-rows"></tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <h2 class="section-title">Questions</h2>
+    <div id="faq-list"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact"></section>
+</main>
+<footer id="foot"></footer>
+<script src="data/extensions.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
